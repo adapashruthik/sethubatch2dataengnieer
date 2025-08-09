@@ -67,12 +67,12 @@ print('iniv'   in   'Srinivas') # True
 print('iniv'   not   in   'Srinivas') # False
 
 
-#6.'''  (Home  work)
-Slice  demo  program
-0      1       2        3      4       5       6       7
-R      a      m        a               R       a       o
--8    -7     -6      -5     -4      -3     -2      -1
-'''
+#6. (Home  work)
+#Slice  demo  program
+#0      1       2        3      4       5       6       7
+#R      a      m        a               R       a       o
+#-8    -7     -6      -5     -4      -3     -2      -1
+
 
 a = 'Rama Rao'
 print(a [ : 7 : 2]) #  a[0 : 7 : 2]  --->  string  from  indexes  0  to  6  in  steps  of  2  i.e.  Rm<space>a
