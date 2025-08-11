@@ -81,14 +81,13 @@ Largest: Vamshi
 from sys import argv
 print(argv)
 
-try:
-    a = []
-    for i in argv[1:]:
-        a.append(eval(i))
-    print('Ascending order sort:', sorted(a))
-    print('Descending order sort:', sorted(a, reverse=True))
+try: 
+    if int(argv[1])%2==0:
+        print('Even Number')
+    else:
+        print('Odd Number')
 except:
-    print("Please don't send number and string inputs together")
+        print('Please Send an integer input')
 
 
 '''
@@ -159,13 +158,13 @@ from sys import argv
 print(argv)
 
 try:
-   a = []
-        for i in argv[1:]:
-                a.append(eval(i))
-        print('Ascending order sort:', sorted(a))
-        print('Descending order sort:', sorted(a, reverse=True))
+    a = []
+    for i in argv[1:]:
+        a.append(eval(i))
+    print('Ascending order sort:', sorted(a))
+    print('Descending order sort:', sorted(a, reverse=True))
 except:
-        print("Please don't send number and string inputs together")
+    print("Please don't send number and string inputs together")
 
 '''
 #output:
@@ -180,12 +179,12 @@ Descending order sort: [25, 19, 14.6, 10.8, 7.4, True, False]
 # 5) Find outputs  (Home  work)
 
 print( 'green'   in   'Hyd  is  green  city')	#True
-print('day'   in   'Sankar  dayal  sarma')	#True
+print('day'   in   'Sankar  dayal  sarma')		#True
 print('Green'   in   'Hyd  is  green  city')	#False
 print('d  is'   in   'Hyd  is  green  city')	#True
-print('dis'   in   'Hyd  is  green  city')	#False
-print('iniv'   in   'Srinivas')		#True
-print('iniv'   not   in   'Srinivas')		#False
+print('dis'   in   'Hyd  is  green  city')		#False
+print('iniv'   in   'Srinivas')					#True
+print('iniv'   not   in   'Srinivas')			#False
 
 
 
@@ -198,29 +197,29 @@ R      a      m       a                R       a       o
 -8    -7     -6      -5       -4      -3      -2      -1
 '''
 a = 'Rama Rao'
-print(a [ : 7 : 2])	#  a[ 0 :  7 : 2]   --->  string  from  indexes   0  to   6  in  steps  of  2  	i.e.  Rm<space>a
-print(a [ : 7])		#  a[ 0 :  7 : 1]   --->  string  from  indexes   0  to   6  in  steps  of  1  	i.e.  Rama<space>Ra
-print(a [2 : 4])	#  a[ 2 :  4 : 1]   --->  string  from  indexes   2  to   3  in  steps  of  1  	i.e.  ma
-print(a [2 : ])		#  a[ 2 :  8 : 1]   --->  string  from  indexes   2  to   7  in  steps  of  1  	i.e.  ma<space>Rao
-print(a [ : 4 ])	#  a[ 0 :  4 : 1]   --->  string  from  indexes   0  to   3  in  steps  of  1  	i.e.  Rama
-print(a [ : : 2])	#  a[ 0 :  8 : 2]   --->  string  from  indexes   0  to   7  in  steps  of  2  	i.e.  Rm<space>a
-print(a [-6 : -1])	#  a[-6 : -1 : -1]  --->  string  from  indexes  -6  to  -2  in  steps  of -1  	i.e.  ma<space>Ra
-print(a [-6 : ])	#  a[-6 :  8 : 1]   --->  string  from  indexes  -6  to   7  in  steps  of  1  	i.e.  ma<space>Rao
+print(a [ : 7 : 2])		#  a[ 0 :  7 : 2]   --->  string  from  indexes   0  to   6  in  steps  of  2  	i.e.  Rm<space>a
+print(a [ : 7])			#  a[ 0 :  7 : 1]   --->  string  from  indexes   0  to   6  in  steps  of  1  	i.e.  Rama<space>Ra
+print(a [2 : 4])		#  a[ 2 :  4 : 1]   --->  string  from  indexes   2  to   3  in  steps  of  1  	i.e.  ma
+print(a [2 : ])			#  a[ 2 :  8 : 1]   --->  string  from  indexes   2  to   7  in  steps  of  1  	i.e.  ma<space>Rao
+print(a [ : 4 ])		#  a[ 0 :  4 : 1]   --->  string  from  indexes   0  to   3  in  steps  of  1  	i.e.  Rama
+print(a [ : : 2])		#  a[ 0 :  8 : 2]   --->  string  from  indexes   0  to   7  in  steps  of  2  	i.e.  Rm<space>a
+print(a [-6 : -1])		#  a[-6 : -1 : -1]  --->  string  from  indexes  -6  to  -2  in  steps  of -1  	i.e.  ma<space>Ra
+print(a [-6 : ])		#  a[-6 :  8 : 1]   --->  string  from  indexes  -6  to   7  in  steps  of  1  	i.e.  ma<space>Rao
 print(a [: -4 : -1])	#  a[-1 : -4 : -1]  --->  string  from  indexes  -1  to  -3  in  steps  of -1  	i.e.  oaR
-print(a [-3 : -1])	#  a[-3 : -1 :  1]  --->  string  from  indexes  -3  to  -2  in  steps  of -1  	i.e.  Ra
-print(a [-3 : ])	#  a[-3 :  8 : 1]   --->  string  from  indexes  -3  to   7  in  steps  of  1  	i.e.  Rao
-print(a [ : : ])	#  a[ 0 :  8 : 1]   --->  string  from  indexes   0  to   7  in  steps  of  1  	i.e.  Rama<space>Rao
-print(a [ : ])		#  a[ 0 :  8 : 1]   --->  string  from  indexes   0  to   7  in  steps  of  1  	i.e.  Rama<space>Rao
-print(a [ : : -1])	#  a[-1 : -9 : -1]  --->  string  from  indexes  -1  to  -8  in  steps  of -1  	i.e.  oaR<space>amaR
-print(a [ : : -2])	#  a[-1 : -9 : -2]  --->  string  from  indexes  -1  to  -8  in  steps  of -2  	i.e.  oRaa
+print(a [-3 : -1])		#  a[-3 : -1 :  1]  --->  string  from  indexes  -3  to  -2  in  steps  of -1  	i.e.  Ra
+print(a [-3 : ])		#  a[-3 :  8 : 1]   --->  string  from  indexes  -3  to   7  in  steps  of  1  	i.e.  Rao
+print(a [ : : ])		#  a[ 0 :  8 : 1]   --->  string  from  indexes   0  to   7  in  steps  of  1  	i.e.  Rama<space>Rao
+print(a [ : ])			#  a[ 0 :  8 : 1]   --->  string  from  indexes   0  to   7  in  steps  of  1  	i.e.  Rama<space>Rao
+print(a [ : : -1])		#  a[-1 : -9 : -1]  --->  string  from  indexes  -1  to  -8  in  steps  of -1  	i.e.  oaR<space>amaR
+print(a [ : : -2])		#  a[-1 : -9 : -2]  --->  string  from  indexes  -1  to  -8  in  steps  of -2  	i.e.  oRaa
 print(a [ -2 : : -2])	#  a[-2 : -9 : -2]  --->  string  from  indexes  -2  to  -8  in  steps  of -2  	i.e.  a<space>mR
-print(a [2 : 8])	#  a[ 2 :  8 : 1]   --->  string  from  indexes   2  to   7  in  steps  of  1  	i.e.  ma<space>Rao
+print(a [2 : 8])		#  a[ 2 :  8 : 1]   --->  string  from  indexes   2  to   7  in  steps  of  1  	i.e.  ma<space>Rao
 print(a [2 : 8 : -1])	#  a[ 2 :  8 :-1]   --->  string  from  indexes   2  to   7  in  steps  of -1  	i.e.  (empty)  as step is negative
 print(a [ : -6 : -1])	#  a[-1 : -6 :-1]   --->  string  from  indexes  -1  to  -5  in  steps  of -1 	i.e.  oaR<space>a
-print(a [2 : -3])	#  a[ 2 : -3 : 1]   --->  string  from  indexes   2  to  -4  in  steps  of  1  	i.e.  ma
+print(a [2 : -3])		#  a[ 2 : -3 : 1]   --->  string  from  indexes   2  to  -4  in  steps  of  1  	i.e.  ma
 print(a [1 : 6 : 2])	#  a[ 1 :  6 : 1]   --->  string  from  indexes   1  to   5  in  steps  of  2  	i.e.  aaR
 print(a [ : -5 : -5])	#  a[-1 : -5 : -5]  --->  string  from  indexes  -1  to  -4  in  steps  of -5 	i.e.  o
-print(a [2 : -5])	#  a[ 2 : -5 : 1]   --->  string  from  indexes   2  to  -6  in  steps  of  1  	i.e.  m
+print(a [2 : -5])		#  a[ 2 : -5 : 1]   --->  string  from  indexes   2  to  -6  in  steps  of  1  	i.e.  m
 print(a [2 : -5 : 2])	#  a[ 2 : -5 : 2]   --->  string  from  indexes   2  to  -6  in  steps  of  2  	i.e.  m
 print(a [ : 0 : -1])	#  a[-1 :  0 : -1]  --->  string  from  indexes  -1  to   1  in  steps  of -1  	i.e.  oaR<space>ama
 print(a [-5 : 0 : -2])	#  a[-5 :  0 : -2]  --->  string  from  indexes  -5  to   1  in  steps  of -2  	i.e.  aa
@@ -524,14 +523,14 @@ String  without  duplicates  :    MISP
 
 # 14) len()  function  demo  program  (Home  work)
 
-print(len('Hyd'))	# 3
+print(len('Hyd'))		# 3
 print(len('Rama Rao'))	# 8
-print(len('9247'))	# 4
-print(len('+-$'))	# 3
-print(len(''))		# 0
-print(len(' '))		# 1
-print(len('A2#'))	# 3
-print(len(3456))	# error as we can't use len for int
+print(len('9247'))		# 4
+print(len('+-$'))		# 3
+print(len(''))			# 0
+print(len(' '))			# 1
+print(len('A2#'))		# 3
+print(len(3456))		# error as we can't use len for int
 print('Sec'. len('12'))	# error as syntax for str len is not valid
 
 
@@ -606,3 +605,4 @@ Result  :   AEMPZ_DF
 Enter  any  string  with  alternate  character  and  digit  :  HYD
 Pls  enter  string  with  alternate  char  and  digit
 '''
+
