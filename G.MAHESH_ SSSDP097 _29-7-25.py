@@ -518,10 +518,10 @@ for  x , y  in   a . items():
 50...60
 '''
 	
-for  x ,  y  in   a: #It gives us an error that we cannot unpack non-iterable objects
+for  x ,  y  in   a: 							#It gives us an error that we cannot unpack non-iterable objects
 	print(x , y)
 	
-for  x , y  in  {10 : 20 , 30 : 40 , 50 : 60}: # #It gives us an error that we cannot unpack non-iterable objects
+for  x , y  in  {10 : 20 , 30 : 40 , 50 : 60}: 	#It gives us an error that we cannot unpack non-iterable objects
 	print(x , y , sep = '...')
 
 
@@ -609,7 +609,7 @@ Indexed  based  for loop
 a = [25 , 10.8 , 'Hyd' , True]
 print('Indexed for loop')
 for i in range(1,len(a)+1):
-    print(i, a[-i])	# How   to  print  each  element  of  list  in  reverse  order  with  indexed  based  for  loop
+    print(i, a[-i])				# How   to  print  each  element  of  list  in  reverse  order  with  indexed  based  for  loop
 
 #How   to  print  each  element  of  list  in  reverse  order  with  for  each  loop  (Do  not  use  2nd  variable  and  slice) # not possible
 
@@ -630,13 +630,13 @@ Hint:  Use  append()  method
 
 '''
 
-a = eval(input('enter 1st list : ')) 		# reads 1st list 
-b = eval(input('enter 2nd list : ')) 		# reads 2nd list 
-c = [] 					# 3rd list is initially empty 
+a = eval(input('enter 1st list : ')) 	# reads 1st list 
+b = eval(input('enter 2nd list : ')) 	# reads 2nd list 
+c = [] 									# 3rd list is initially empty 
 
-small = min(len(a) , len(b)) 		# smallest list length 
+small = min(len(a) , len(b)) 			# smallest list length 
 
-for i in range(small): 			# how to add lists 'a' and 'b' and store results in list 'c' with indexed based for loop 
+for i in range(small): 					# how to add lists 'a' and 'b' and store results in list 'c' with indexed based for loop 
 	c . append(a[i] + b[i]) 
 print('3rd list : ' , c) 
 
@@ -657,7 +657,7 @@ enter 2nd list :  [30 , 40 , 35 , 12 , 100 , 200 , 300]
 a = [25 , 10.8 , 'Hyd' , True , 3 + 4j , None , 'Sec']
 print('Indexed for loop')
 for i in range(2,5)	
-print(a[i])	#How  to  print  elements  from  indexes  2  to  4  of  list  'a'  with  indexed  based  for  loop
+print(a[i])		#How  to  print  elements  from  indexes  2  to  4  of  list  'a'  with  indexed  based  for  loop
 
 not possible	#How  to  print  elements  from  indexes  2  to  4  of  list  'a'  with  for  each  loop   without  using  2nd  variable  and  slice
 
@@ -676,4 +676,5 @@ b = [10 , 20 , 15 , 18]
 for  x  in   b:
 	x += 1
 print('b :  ' ,  b)	# Output: [10, 20, 15, 18]
+
 
