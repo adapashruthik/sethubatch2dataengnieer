@@ -1,4 +1,4 @@
-'''#program to test year is leap year or not
+#program to test year is leap year or not
 x=int(input('Enter a year: '))
 if ((x%4==0 and x%100 !=0) or x%400==0):
     print(F'{x} is a leap year')
@@ -136,7 +136,7 @@ match  i:
 	case  2:
 		print('Two')
 print('Bye')  #  Anonymous value should be written at end. The remaining cases won't be executed
-
+'''
 # Find  outputs  (Home  work)
 m = 2
 match  m:
@@ -204,7 +204,7 @@ print('Bye') #  Book <next line> Bye
    Sec
    Cyb
    Bye
-
+'''
 x = eval(input('Enter any  number :  '))
 match  x:
 	case  7 |  -6  |  0:
@@ -221,7 +221,7 @@ match  x:
 		print('Usa')
 # End  of  match
 print('Bye')
-'''
+
 
 '''
 1) What  is  the  output  when  input  is  (-10 , -20) ?  --->
@@ -247,8 +247,8 @@ print('Bye')
 11) What  is  the  output  when  input  is  {10 : 20} ?  --->
     Not a point : should insert in tuple not dictionary
 '''
-tpl = eval(input('Enter  any  point  in  the  form  of  (x , y) :  '))
-match  tpl:
+num = eval(input('Enter  any  point  in  the  form  of  (x , y) :  '))
+match  num:
 	case  (0 , 0):
 		print('Origin')
 	case   (0 , y):
