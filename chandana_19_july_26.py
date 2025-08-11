@@ -31,7 +31,7 @@ print(F'{{{{{x}}}}}')  #  {{25}}
 print(F'{{{{{{x}}}}}}')  #  {{{x}}}
 print(F'{{{{{{{x}}}}}}}')  #  {{{25}}}
 print(F'{{{{{{{{x}}}}}}}}')   #  {{{{x}}}}
-'''
+
 #program to determine sum,diff,product,quotient,largest, and smallest of two numbers and also remainder, sqrt of 1st input,power, gcd and factorial
 import math
 x=eval(input('Enter 1st integer number: ')) # reads 1st integer from keyboard and assigns to x
@@ -112,7 +112,7 @@ simple_interest=(p*t*r)/100
 compound_interest=p*(1+r/100)**t-p
 print('Simple interest : ',simple_interest)
 print('compound interest : ',compound_interest)
-'''
+
 print()
 #program to swap values of two objects using 3rd object
 x=eval(input('Enter 1st input: '))
