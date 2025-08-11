@@ -75,7 +75,7 @@ Outside loop
 
 if(10 , 20 , 30):
 	print('Hyd')
-	break		#Break cannot be used in 'if' it is only used for and while loop
+	break			#Break cannot be used in 'if' it is only used for and while loop
 	print('Sec')
 
 
@@ -340,11 +340,11 @@ Found  at   index  :8
 
 print(a := 25) 		#Here reference a points to int-obj 25 and results the 25
 print(a = 25) 		#Returns the error 
-print(a)  		#Returns the 25 as we are already initialized the value 25 to a
+print(a)  			#Returns the 25 as we are already initialized the value 25 to a
 print(a := 6 + 7) 	#Returns the result of 13 which is a = 13
-print(a) 		#Returns the 13 
-print((a := 6) + 7) 	#Here reference a points to only 6 and then adds to 7 i.e 13
-print(a) 		#Returns 6
+print(a) 			#Returns the 13 
+print((a := 6) + 7) #Here reference a points to only 6 and then adds to 7 i.e 13
+print(a) 			#Returns 6
 print((a = 6) + 7) 	#Returns the error
 
 
@@ -353,7 +353,7 @@ print((a = 6) + 7) 	#Returns the error
 
 # 13) Find  outputs  (Home  work)
 
-a = 0 #Reference a points to int-obj 0
+a = 0 				#Reference a points to int-obj 0
 if  a == 0:
 	print('Hyd')
 else:
@@ -398,12 +398,12 @@ try:
 		x=input('Enter input  (ctrl + z  to  stop)  :  ')
 		sum +=eval(x)
 		ctr +=1
-except  EOFError:
+except EOFError:
 	try:
 		print(F'Average :   {sum / ctr}')
 	except  ZeroDivisionError:
 		print('Enter  at  least  one  input')
-except  (NameError , TypeError):
+except (NameError , TypeError):
 	print('Input  can  not  be  string')
 
 '''
@@ -444,14 +444,14 @@ print(a) 	#THrows error as we have deleted the reference a
 
 a = b = c = 25 		#Here reference a, b, c points to one object 25
 print(a , b , c) 	#Returns the value of a b c is 25 25 25
-del   a 		#Reference a is deleted 
+del   a 			#Reference a is deleted 
 print(b , c) 		#Returns the values of b c i.e 25 25
-#print(a) 		#Throws error that a is not defined
-del   b 		#Deletes the reference b
-print(c) 		#Returns the value of c i.e 25
-print(b) 		#Throws an error that b is not defined
-del   c 		#deletes the reference c
-print(c) 		#Throws an error that c is not defined
+#print(a) 			#Throws error that a is not defined
+del   b 			#Deletes the reference b
+print(c) 			#Returns the value of c i.e 25
+print(b) 			#Throws an error that b is not defined
+del   c 			#deletes the reference c
+print(c) 			#Throws an error that c is not defined
 
 
 
@@ -459,11 +459,11 @@ print(c) 		#Throws an error that c is not defined
 # 17) Can  multiple  objects  be  deleted  with  same  del  operator ?
 
 a , b , c = 25 , 10.8 , 'Hyd' 	#Here reference a b c points to 3 different objects i.e 25 10.8 Hyd
-print(a , b , c) 		#Returns the values of a b c i.e 25 10.8 Hyd
-del   a , b , c 		#Here we are deleting the references a b c
-print(a) 			#Throws the error that a is not defined
-print(b) 			#Throws the error that b is not defined
-print(c) 			#Throws the error that c is not defined
+print(a , b , c) 				#Returns the values of a b c i.e 25 10.8 Hyd
+del   a , b , c 				#Here we are deleting the references a b c
+print(a) 						#Throws the error that a is not defined
+print(b) 						#Throws the error that b is not defined
+print(c) 						#Throws the error that c is not defined
 
 
 
@@ -471,12 +471,12 @@ print(c) 			#Throws the error that c is not defined
 # 18) Find outputs  (Home  work)
 
 a = [10 , 20 , 15 , 18] #Here the reference a points to list [10, 20, 15, 18]
-print(a) 		#Returns the list which points to a
-del  a[2] 		#Deletes the values of reference a where the index is 2 i.e 15
-print(a) 		#Returns the list without 15
-del  a 			#Here we are deleting the reference a 
-print(a) 		#Error that a is not defines
-print(a[0]) 		#Error that there is no a defined  
+print(a) 				#Returns the list which points to a
+del  a[2] 				#Deletes the values of reference a where the index is 2 i.e 15
+print(a) 				#Returns the list without 15
+del  a 					#Here we are deleting the reference a 
+print(a) 				#Error that a is not defines
+print(a[0]) 			#Error that there is no a defined  
 
 
 
@@ -484,9 +484,10 @@ print(a[0]) 		#Error that there is no a defined
 # 19) Find outputs  (Home work)
 
 a = (10 , 20 , 15 , 18) #Here a points to the tuple
-print(a) 		#Returns the tuple 
-print(a[0]) 		#returns the element at index 0 i.e 10
-del  a[2] 		#Error that we cannot delete the elements from tuple since the tuple is immutable
-del  a 			#Delete the reference a 
-print(a) 		#Throws an error that a is not defined
-print(a[0]) 		#Throws an error that a is not defined
+print(a) 				#Returns the tuple 
+print(a[0]) 			#returns the element at index 0 i.e 10
+del  a[2] 				#Error that we cannot delete the elements from tuple since the tuple is immutable
+del  a 					#Delete the reference a 
+print(a) 				#Throws an error that a is not defined
+print(a[0]) 			#Throws an error that a is not defined
+
