@@ -1,4 +1,5 @@
-"""0408
+"""
+0408
 
 # Find  outputs  (Home  work)
 for  i   in   range(1 , 8):
@@ -66,15 +67,17 @@ if(10 , 20 , 30):
 
 # Find  outputs  (Home  work)
 for  i   in   range(1 , 8):
- 	print(i)
- 	if   i % 3 == 0:
- 		pass
- 		print('Hyd')
- 	else:
- 		print('Sec')
- 	print('Hello')
+	print(i)
+	if   i % 3 == 0:
+		pass
+		print('Hyd')
+	else:
+		print('Sec')
+	print('Hello')
 # End  of  the  loop
 print('Outside loop')
+
+
 '''
 1
 sec
@@ -83,6 +86,7 @@ Hello
 sec
 Hello
 3
+Hyd
 Hello
 4
 sec
@@ -91,7 +95,8 @@ Hello
 sec
 Hello
 6
-hello
+Hyd
+Hello
 7
 sec
 Hello
@@ -404,7 +409,7 @@ Enter input  (ctrl + z  to  stop)  :  92.8
 Enter input  (ctrl + z  to  stop)  :  ^Z
 Average :   30.214285714285715
 '''
-"""
+
 total = 0
 count = 0
 
@@ -431,3 +436,4 @@ if count == 0:
 else:
     avg = total / count
     print("Average :", avg)
+"""
