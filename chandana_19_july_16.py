@@ -120,7 +120,7 @@ print(float(0XA7B9)) # Converts  hexadecimal  object  0XA7B9  to  float  object 
 #print(float(3 + 4j)) # typeerror: float() can't convert complex to float
 #print(float('Ten')) # ValueError
 
-# complex()  function  demo  program
+# complex()  function  
 print(complex(3 , 4)) # Converts  int  objects  3  and  4  to  complex object (3+4j)
 print(complex(0 , 4)) # Converts  int  objects  0  and  4  to  complex object (0+4j)
 print(complex(3)) # Converts  int  object  3  to  complex object (3+0j)
@@ -138,7 +138,7 @@ print(complex('3.8')) # 3.8+0j
 #print(complex('3' , '4')) # TypeError
 #print(complex('Ten'))  # valueError
 
-#  bool()  function  demo  program
+#  bool()  function  
 print(bool(0)) #   False
 print(bool(10)) #   True :  10  is  non-zero
 print(bool(-25)) #   True :  -25  is  non-zero
@@ -153,10 +153,23 @@ print(bool('Hyd')) # True
 print(bool(' ')) # True : space is a non-empty string
 print(bool('True')) # True
 
-# str()  function  demo  program
+# str()  function  
 print(str(25))  #  Converts   25  to  '25'
 print(str(10.8)) # Converts   10.8  to  '10.8'
-print(str(3 + 4j)) # '3+4j'
-print(str(True))
-print(str(False))
-print(str(None))
+print(str(3 + 4j)) # '(3+4j)'
+print(str(True)) # True
+print(str(False)) # False
+print(str(None))  #  None
+
+# oct()  function  
+print(oct(195)) # Converts  int  object  195  to  octal string '0o303'
+print(oct(0B10101110010)) # Converts  binary  object  0B10101110010  to  octal string '0o2562'
+print(oct(0xA7B9)) # Converts  hexadecimal  object  0xA7B9  to  octal string '0o123671'
+
+ 
+# hex()  function  
+print(hex(25))  # Converts  int  object  25  to  hexadecimal string '0x19'
+print(hex(0B10101111010111)) # Converts  binary  object  0B10101111010111  to  hexadecimal string '0x2bd7'
+print(hex(0O6247))  # Converts  octal  object  0O6247  to  hexadecimal string '0xCA7'
+
+ 
