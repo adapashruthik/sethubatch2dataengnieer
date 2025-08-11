@@ -1,4 +1,3 @@
-'''
 #program to determine command line input is even number or odd number
 from sys import argv
 print(argv)
@@ -210,7 +209,7 @@ try:
     print(result)
 except:
     print("pls enter string with alternate char and digit")
-'''
+
 #program to find largest command line input
 from sys import argv
 print(argv)
