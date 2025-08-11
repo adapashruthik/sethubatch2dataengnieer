@@ -1,0 +1,8 @@
+a=3+4j
+print(a)
+print(type(a))
+print(id(a))
+print(a.real)
+print(a.imag)
+print(type(a.real))
+print(type(a.imag))
