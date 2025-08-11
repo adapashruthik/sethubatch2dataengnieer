@@ -43,12 +43,13 @@ if (a > b and a > c) or (b > a and b > c):
 else:
     print("Largest Number =",c)
 
+'''
 #Output
 Enter 1st number: 78
 Enter 2nd number: 33
 Enter 3rd number: 99
 Largest Number = 99
-
+'''
 
 
 '''
@@ -71,8 +72,9 @@ elif a == 2:
 else:
     print("Please enter a valid input")
     
-#Output
+
 '''
+#Output
 Enter  1  to  convert  celsius  to  farenheit  and  2  to  convert  fahrenheit  to  celsius : 1
 Enter celsius temperature: 30
 Fahrenheit  Equivalent: 86.0
@@ -162,8 +164,7 @@ if c < min:
 mid = (a + b + c) - (max+ min)
 print("Largest number   : " ,max)
 print("Smallest number  : ",min)
-print("Middle nu
-mber    : ",mid)
+print("Middle number    : ",mid)
 
 '''
 output:
@@ -178,8 +179,8 @@ Middle number =34
 
 
 # 6) Find  outputs  (Home  work)
-m = 4 #Here reference m points to int-obj 4
-match  m: #Here we are using the match to select something 
+m = 4 			#Here reference m points to int-obj 4
+match  m: 		#Here we are using the match to select something 
 	case  1:
 		print('One')
 	case  2:
@@ -266,7 +267,6 @@ match  x:
 print('Bye')
 
 '''
-#outputs
 outputs  if  input  is  -6 = 
 Hyd
 Sec
@@ -305,8 +305,7 @@ Bye
 '''
 
 
-''' 
-# 11) Write  a  program  to  determine  bill  amount  and  input  is  units
+''' 11) Write  a  program  to  determine  bill  amount  and  input  is  units
 
 
 
@@ -355,7 +354,7 @@ print("total cost = ",cost)
 
 '''
 # output
- Enter units: 1200
+Enter units: 1200
 total cost =  5300.0
 '''
 
@@ -421,7 +420,7 @@ print('Bye')
 
 
 
-# '''
+'''
 15) Find  outputs  (Home  work)
 #How  to  print  each  element  of  list  [10 , 20 , 15 , 18]  with  for  loop
 #print()
@@ -433,32 +432,35 @@ print('Bye')
 l = [10, 20, 15, 18]
 for i in l:
     print(i)
-    
+'''
 #Output
 10
 20
 15
 18
-
+'''
 s = 'Hyd'
 for i in s:
     print(i)
-    
+
+'''
 #Output
 H
 y
 d
+'''
 
 for i in range(5):
     print(i)
 
+'''
 #Output
 0
 1
 2
 3
 4
-
+'''
 
 
 
@@ -468,29 +470,30 @@ for  x  in  {10 : 20 , 30 : 40 , 50 : 60} . keys():
 	print(x)
 print()
 
+'''
 #outputs
 10
 30
 50
-
+'''
 for  x  in  {10 : 20 , 30 : 40 , 50 : 60} . values():
 	print(x)
 print()
-
+'''
 #outputs
 20
 40
 60
-
+'''
 for  x  in  {10 : 20 , 30 : 40 , 50 : 60} . items():
 	print(x)
 print()
-
+'''
 #outputs
 (10, 20)
 (30, 40)
 (50, 60)
-
+'''
 for  x  in  {10 : 20 , 30 : 40 , 50 : 60}:
 	print(x)
 	
@@ -517,7 +520,6 @@ for  x , y  in   a . items():
 	
 for  x ,  y  in   a: #It gives us an error that we cannot unpack non-iterable objects
 	print(x , y)
-	
 	
 for  x , y  in  {10 : 20 , 30 : 40 , 50 : 60}: # #It gives us an error that we cannot unpack non-iterable objects
 	print(x , y , sep = '...')
@@ -674,3 +676,4 @@ b = [10 , 20 , 15 , 18]
 for  x  in   b:
 	x += 1
 print('b :  ' ,  b)	# Output: [10, 20, 15, 18]
+
