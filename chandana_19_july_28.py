@@ -1,4 +1,4 @@
-'''
+
 #program to add, subtract, multiply,and divide two complex numbers
 x=complex(input('enter 1st complex number :'))
 y=complex(input('enter 2nd complex number :'))
@@ -8,7 +8,7 @@ print('Product :',x*y)
 print('Division :',x/y)
 
 print()
-
+'''
 # Identify  error
 else:
 		print('else  suite')# no if statement
@@ -74,14 +74,14 @@ else:
 	print('Sec')
 	print('Cyb')
 print('Bye')
-
+'''
 #program to determine a number is even or odd with if statement
 x=int(input('enter a number :'))
 if (x%2==0):
     print(F'{x} is even number')
 else:
     print(F'{x} is odd number')
-'''
+
 # Find outputs  (Home  work)
 if():
         print('Hyd')
@@ -107,11 +107,14 @@ if{10 : 20 , 30 : 40}:
         print('Cyb')
 print('Bye')
 '''
+o/p:
 Hyd
 sec
 cyb
-Bye: if condition is non empty dictionary . so, stmts of if are executed'''
+Bye: if condition is non empty dictionary . so, stmts of if are executed
+'''
 print()
+
 # Find outputs  (Home  work)
 if { }:
 	print('Hyd')
