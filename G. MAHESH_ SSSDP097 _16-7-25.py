@@ -9,29 +9,30 @@ print(b)                   # Output: Hyd
 c = '''Hyd is green city.
 Hyd is hitec city.
 Hyd is beautiful city.'''  # Ref 'c' points to Multi-line string using triple quotes
-print(c)		   # Output: Hyd is green city.
-				     Hyd is hitec city.
-				     Hyd is beautiful city.
+print(c)		  
+''' # Output: 	Hyd is green city.
+				Hyd is hitec city.
+				Hyd is beautiful city.'''
 
 
 
 # 2) Index   demo  program  (Home  work)
 
-a = 'Hyd'					# Ref 'a' points to string object "Hyd"
+a = 'Hyd'									# Ref 'a' points to string object "Hyd"
 print(How  to  print  'H'  of  object  'a')	# print(a[0])
 print(How  to  print  'y'  of  object  'a')	# print(a[1])
 print(How  to  print  'd'  of  object  'a')	# print(a[2])
-print(a[3])					# Error as string index is out of range
+print(a[3])									# Error as string index is out of range
 print(How  to  print  'd'  of  object  'a')	# print(a[-1])
 print(How  to  print  'y'  of  object  'a')	# print(a[-2])
 print(How  to  print  'H'  of  object  'a')	# print(a[-3])
-print(a[-4])    				# Error as string index is out of range
-print(a[0] ==  a[-3]) 				# Output: True H==H
-a[2] = 'c'	 				# Error because string is immutable can not used to assign values
-print(25[0])	 				# Error because int is a single element cannot performs indexing
-print('25'[0])	 				# Output: 2
-print(True[1])   				# Error because bool is a single element cannot performs indexing
-print('True'[1]) 				# Output: r
+print(a[-4])    							# Error as string index is out of range
+print(a[0] ==  a[-3]) 						# Output: True H==H
+a[2] = 'c'	 								# Error because string is immutable can not used to assign values
+print(25[0])	 							# Error because int is a single element cannot performs indexing
+print('25'[0])	 							# Output: 2
+print(True[1])   							# Error because bool is a single element cannot performs indexing
+print('True'[1]) 							# Output: r
 
 
 
@@ -46,14 +47,14 @@ print(a * -1)		# Output: '' (empty string)
 print(25 * 3)		# Output: 75
 print('25' * 3) 	# Output: '252525'
 print('25' * 4.0)  	# error we can't multiply string with float number 
-print(3 * 'Hyd')    	# Output: 'HydHydHyd'
-print('25' * True)  	# Output: '25'
+print(3 * 'Hyd')    # Output: 'HydHydHyd'
+print('25' * True)  # Output: '25'
 
 
 
 #  4) Find  outputs  (Home work)
 
-a = 'Hyd'  	  # Ref 'a' points to string object "Hyd"
+a = 'Hyd'  	  	  # Ref 'a' points to string object "Hyd"
 print(a , id(a))  # Output: 'Hyd', address of the object 'a'
 a = a * 3      	  # 'a' now refers to a new string object a*3 i.e., 'HydHydHyd'
 print(a , id(a))  # Output: 'HydHydHyd', address of the object 'a'
@@ -73,14 +74,14 @@ print(len(689))		# error because can't perform len() on int type
 
 # 7) Find  outputs  (Home  work)
 
-a = """"Hyd"""	  # Ref 'a' points to string object """"Hyd"""
-print(a)	  # Output: "Hyd
-print(len(a))	  # Output: 4
-print(a[0])	  # Output: "
-print("""Hyd"""") # syntax error as it does not take the last quote gives error
-b = """""Hyd"""   # Ref 'b' points to string object """""Hyd"""
-print(b)	  # Output: ""Hyd
-print(len(b))     # Output: 5
+a = """"Hyd"""	  	# Ref 'a' points to string object """"Hyd"""
+print(a)	  		# Output: "Hyd
+print(len(a))	  	# Output: 4
+print(a[0])	  		# Output: "
+#print("""Hyd""'") 	# syntax error as it does not take the last quote gives error
+b = """""Hyd"""   	# Ref 'b' points to string object """""Hyd"""
+print(b)	  		# Output: ""Hyd
+print(len(b))     	# Output: 5
 
 
 
@@ -128,8 +129,8 @@ print(int(True))  	#  Converts  bool   object    True  to  int  object :	1
 print(int(False)) 	#  Converts  bool   object    False  to  int  object : 0
 print(int('25'))   	#  Converts string object  '25' to  int  object : 25
 print(int('0075')) 	#  Converts  string object  '0075'  to  int  object : 75
-print(int(0B11010)) 	#  Converts binary object 0B11010  to  int  object : 26
-print(0B11010)      	#  decimal equivalent of  0B11010 output: 26
+print(int(0B11010)) #  Converts binary object 0B11010  to  int  object : 26
+print(0B11010)      #  decimal equivalent of  0B11010 output: 26
 print(int(0O6247)) 	#  Converts octal object  0O6247  to  int  object : 3239
 print(0O6247)      	#  decimal equivalent of 0O6247 output: 3239 
 print(int(0XA7B9)) 	#  Converts hexa-decimal object  0XA7B9 to  int  object : 42937 
@@ -167,7 +168,7 @@ print(complex(3))        	#  Converts int  object  to  complex  object:  (3=0j)
 print(complex(3.8 , 4.6))	#  Converts float  objects   to  complex  object:  (3.8=4.6j)
 print(complex(3.8))      	#  Converts  float object   to  complex  object:  (3.8=0j)
 print(complex(3 , 4.5))  	#  Converts   int, float objects   to  complex  object: (3=4.5j)
-print(complex(True , False))  	#  Converts  bool objects   to  complex  object:  (1=0j)
+print(complex(True , False)) #  Converts  bool objects   to  complex  object:  (1=0j)
 print(complex(True))     	#  Converts  bool object   to  complex  object:  (1=0j)
 print(complex(False))    	#  Converts  bool object   to  complex  object:  0j
 print(complex(True , 4)) 	#  Converts  bool,int objects   to  complex  object:  (1=4j)
@@ -225,4 +226,5 @@ print(oct(0xA7B9))        # Converts Hexdecimal object 0xA7B9 to Octal object : 
 print(hex(25))               #  Converts decimal object 25 to Hexdecimal object : '0x19'
 print(hex(0B10101111010111)) #  Converts Binary object 0B10101111010111 to Hexdecimal object  : '0x2BD7' (0B10101111010111 = 11287)
 print(hex(0O6247))           #  Converts Octal object 0O6247 to Hexdecimal object  : '0xca7'(0O6247 = 3239)
+
 
