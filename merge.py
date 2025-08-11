@@ -1,12 +1,19 @@
-a=input("enter first string: ")
-b=input("enter second string: ")
-result=""
-i=j=0
-while i < len(a) or j < len(b):
-    if i < len(a):
-        result += a[i]
-        i += 1
-    if j < len(b):
-        result += b[j]
-        j += 1
-        print("merged string:",result)
+# Input two strings from the user
+a = input("Enter first string : ")
+b = input("Enter second string : ")
+
+c = ""  # Result string
+i = 0   # Index for iteration
+
+# Loop until the end of the shorter string
+while i < len(a) and i < len(b):
+    c += a[i] + b[i]
+    i += 1
+
+# Append remaining characters of the longer string
+if i < len(a):
+    c += a[i:]
+elif i < len(b):
+    c += b[i:]
+
+print("Result  :  ", c)
